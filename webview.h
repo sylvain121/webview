@@ -1261,6 +1261,10 @@ WEBVIEW_API void webview_set_title(webview_t w, const char *title) {
   static_cast<webview::webview *>(w)->set_title(title);
 }
 
+WEBVIEW_API void webview_set_userAgent(webview_t w, const char *userAgent) {
+  static_cast<webview::webview *>(w)->set_title(userAgent);
+}
+
 WEBVIEW_API void webview_set_size(webview_t w, int width, int height,
                                   int hints) {
   static_cast<webview::webview *>(w)->set_size(width, height, hints);
