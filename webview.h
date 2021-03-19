@@ -496,7 +496,7 @@ public:
     gtk_window_set_title(GTK_WINDOW(m_window), title.c_str());
   }
 
-  void set_userAgent(const stf::string userAgent) {
+  void set_userAgent(const std::string userAgent) {
     WebKitSettings * settings = webkit_web_view_get_settings(WEBKIT_WEB_VIEW(m_webview));
     webkit_settings_set_user_agent(settings, userAgent.c_str());
   }
